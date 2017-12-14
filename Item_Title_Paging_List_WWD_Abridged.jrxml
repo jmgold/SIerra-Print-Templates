@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-12-13T15:51:52 -->
+<!-- 2017-12-14T09:45:39 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Item_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="22190a39-861a-4ebd-9c8b-ed99d9ac85ce">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -284,9 +284,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="56" splitType="Stretch">
-			<staticText>
-				<reportElement key="staticText-24" stretchType="RelativeToTallestObject" x="5" y="20" width="55" height="16" uuid="0662e796-3c3d-4974-bd91-c99d73ea530f"/>
+		<band height="91" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="textField-4" x="77" y="31" width="492" height="20" uuid="357d2f4c-7464-45b6-baf7-12364458096b"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -296,49 +296,10 @@
 				<textElement>
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
-				<text><![CDATA[TITLE:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement key="staticText-25" positionType="Float" x="5" y="4" width="55" height="16" uuid="4c5aeb95-0e81-462b-8cbc-71c7457058e2"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[AUTHOR:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement key="staticText-26" positionType="Float" x="310" y="4" width="52" height="16" uuid="daf96d08-f77e-4dc1-9ef0-53088b9c4f77"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[CALL #: NUMBER:]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-27" positionType="Float" x="363" y="4" width="207" height="16" uuid="db063d52-5c5d-4a65-a302-09101c2fea83"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Call_Number}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement key="staticText-30" x="400" y="36" width="70" height="16" uuid="310a60db-85dc-430f-96c2-baefbf68844f"/>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-5" x="77" y="51" width="492" height="20" uuid="05b18f8a-cf81-4e2c-91fc-40cfe749963f"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -348,10 +309,23 @@
 				<textElement>
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
-				<text><![CDATA[BARCODE:]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[$F{Item_Author}]]></textFieldExpression>
+			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-28" x="470" y="36" width="100" height="16" uuid="4ebbfa7b-ced3-4c0d-ada7-084b496335a1"/>
+				<reportElement key="textField-6" x="390" y="71" width="179" height="20" uuid="b7fb1b66-a9e0-4e0f-a29a-6093b9bfada6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Item_Publisher}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-7" x="390" y="11" width="179" height="20" uuid="1f20a191-3dc4-40fb-98b1-5600fda29585"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -364,85 +338,7 @@
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-29" positionType="Float" x="60" y="4" width="250" height="16" uuid="95385f49-1e11-4d6e-9160-7ef6fa0294e6"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Author}]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="textField-30" x="60" y="20" width="323" height="16" uuid="35f4c104-f2ba-4e48-b567-339b9258c055"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement key="staticText-25" positionType="Float" x="5" y="36" width="55" height="16" uuid="a05e810e-1432-4ef6-a4fd-05c8c8b6a543"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[Publisher]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-29" positionType="Float" x="60" y="36" width="155" height="16" uuid="dbbe3554-3b45-4377-bc44-bd13c803dcd2"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Publisher} + $F{Item_Publisher_RDA}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement key="staticText-30" x="383" y="20" width="67" height="16" uuid="bf6bbce3-8c4d-4d6a-aa95-0fcb7c789c4a"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[Year:]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-28" x="450" y="20" width="120" height="16" uuid="fab26a08-5958-43b8-844b-55981b335762"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Publish_Date} + $F{Item_Publish_Date_RDA}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-29" positionType="Float" x="270" y="36" width="130" height="16" uuid="eb1a5891-f186-4a22-bcd4-8635d8afdec9"/>
+				<reportElement key="textField-8" x="123" y="11" width="188" height="20" uuid="7f9c7ab5-dcac-4525-81cc-7af87b164685"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -454,8 +350,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement key="staticText-25" positionType="Float" x="215" y="36" width="55" height="16" uuid="5d1fc501-6c2d-447c-a852-2ee1529f7cfc"/>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-9" x="77" y="71" width="234" height="20" uuid="1c8541c3-cc4f-4a5a-90c4-1afa44fe8ebb"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -465,16 +361,91 @@
 				<textElement>
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
-				<text><![CDATA[Pickup:]]></text>
+				<textFieldExpression><![CDATA[$F{Item_Edition}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-13" positionType="Float" x="6" y="51" width="71" height="20" uuid="de01ff72-629b-498a-abb6-68c35e124685"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[AUTHOR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" positionType="Float" x="6" y="31" width="71" height="20" uuid="4a78f9e0-5223-48b7-b55a-dac3df318093"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[TITLE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-15" positionType="Float" x="6" y="11" width="117" height="20" uuid="4a2bc73d-1473-42f2-9ba9-ebf1aabd4c3a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[PICKUP LOCATION:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-16" positionType="Float" x="6" y="71" width="71" height="20" uuid="f3e08e8c-6e0a-4313-8622-e364bdc1353a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[EDITION:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-17" positionType="Float" x="311" y="71" width="79" height="20" uuid="8c577d14-4c68-4864-88eb-95ebde2400a0"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[PUBLISHER:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-18" positionType="Float" x="311" y="11" width="79" height="20" uuid="19e4ab6b-a2f9-4400-a7e3-53e0b4701843"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[BIB RECID:]]></text>
 			</staticText>
 		</band>
 	</detail>
 	<columnFooter>
 		<band splitType="Stretch"/>
 	</columnFooter>
-	<pageFooter>
-		<band height="64" splitType="Stretch"/>
-	</pageFooter>
 	<lastPageFooter>
 		<band height="9" splitType="Stretch"/>
 	</lastPageFooter>
