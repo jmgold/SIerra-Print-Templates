@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-01-24T14:14:17 -->
+<!-- 2018-01-26T15:50:03 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -299,7 +299,7 @@
 	<detail>
 		<band height="37" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-4" x="140" y="0" width="220" height="15" uuid="6a302657-d595-4b4c-81f3-d69b540cfb16">
+				<reportElement key="textField-4" x="210" y="0" width="270" height="15" uuid="6a302657-d595-4b4c-81f3-d69b540cfb16">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -315,15 +315,15 @@
 				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="0" width="140" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
+				<reportElement x="0" y="0" width="210" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
 				<textElement>
 					<font fontName="Serif" isBold="true"/>
 					<paragraph lineSpacingSize="0.0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number}.replace("LIBRARY OF THINGS ", "LIB OF ") + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="360" y="0" width="110" height="15" uuid="a750e783-e3df-4b45-ae02-379e0b791a89">
+				<reportElement x="0" y="15" width="120" height="20" uuid="a750e783-e3df-4b45-ae02-379e0b791a89">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -333,7 +333,7 @@
 				<textFieldExpression><![CDATA[" " + (($F{Item_Author} == null) ? "" : $F{Item_Author})]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="260" y="15" width="110" height="20" uuid="6cca2a4a-d370-4d93-8d1a-e790082ad8a3">
+				<reportElement x="320" y="15" width="110" height="20" uuid="6cca2a4a-d370-4d93-8d1a-e790082ad8a3">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -343,7 +343,7 @@
 				<textFieldExpression><![CDATA[(($F{Item_Publish_Date} == null) ? "" : $F{Item_Publish_Date}) + (($F{Item_Publish_Date_RDA} == null) ? "" : $F{Item_Publish_Date_RDA})]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="470" y="0" width="100" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
+				<reportElement x="480" y="0" width="90" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
@@ -352,7 +352,7 @@
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-6" x="0" y="15" width="260" height="20" uuid="3944c920-4f3c-4cd9-9cbe-0f31ab302f7e">
+				<reportElement key="textField-6" x="120" y="15" width="200" height="20" uuid="3944c920-4f3c-4cd9-9cbe-0f31ab302f7e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -380,7 +380,7 @@
 					<font fontName="Serif" size="10"/>
 					<paragraph lineSpacingSize="0.0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
