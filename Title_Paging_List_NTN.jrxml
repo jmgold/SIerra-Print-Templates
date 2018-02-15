@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-01-25T15:48:14 -->
+<!-- 2018-02-15T13:15:43 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -310,7 +310,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font fontName="Serif" size="10"/>
+					<font fontName="Serif" size="11"/>
 					<paragraph lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
@@ -339,7 +339,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font fontName="Serif" size="10"/>
+					<font fontName="Serif" size="11"/>
 					<paragraph lineSpacingSize="0.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
@@ -347,7 +347,7 @@
 			<textField>
 				<reportElement x="135" y="0" width="175" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
 				<textElement>
-					<font fontName="Serif" isBold="true"/>
+					<font fontName="Serif" size="11" isBold="true"/>
 					<paragraph lineSpacingSize="0.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
@@ -357,7 +357,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Serif"/>
+					<font fontName="Serif" size="11" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
 			</textField>
@@ -366,7 +366,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Serif"/>
+					<font fontName="Serif" size="11"/>
 					<paragraph lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + (($F{Item_Author} == null) ? "" : $F{Item_Author})]]></textFieldExpression>
