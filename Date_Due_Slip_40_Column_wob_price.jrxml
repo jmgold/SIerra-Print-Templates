@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<<<<<<< HEAD
-<!-- 2018-03-08T15:54:21 -->
-=======
-<!-- 2018-03-07T15:24:08 -->
->>>>>>> parent of 9ab4130... WOB updates
+<!-- 2018-03-09T13:35:44 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -401,7 +397,7 @@
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="10" width="176" height="70" uuid="568e4abe-3de6-44d0-aaf0-76620fbb00ca"/>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="10" width="176" height="81" uuid="568e4abe-3de6-44d0-aaf0-76620fbb00ca"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -411,11 +407,7 @@
 				<textElement>
 					<font size="10"/>
 				</textElement>
-<<<<<<< HEAD
-				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using the Woburn Public Library, a member of the Minuteman Library Network.\n\nTel: 781-933-0148\nChildren's:781-937-0405\n"]]></textFieldExpression>
-=======
-				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using the Woburn Public Library, a member of the Minuteman Library Network. \n Tel: 781-933-0148 \n Children's:781-937-0405"]]></textFieldExpression>
->>>>>>> parent of 9ab4130... WOB updates
+				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using the Woburn Public Library, a member of the Minuteman Library Network. \n\nTel: 781-933-0148 \nChildren's:781-937-0405"]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
