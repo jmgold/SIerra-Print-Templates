@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-03-29T15:53:42 -->
+<!-- 2018-03-30T16:09:09 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -399,7 +399,7 @@
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="10" width="176" height="70" uuid="eea41f4a-6767-4de8-92a4-35336387dfe9"/>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="0" width="176" height="40" uuid="eea41f4a-6767-4de8-92a4-35336387dfe9"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -409,7 +409,20 @@
 				<textElement textAlignment="Center">
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using\nthe Robbins Library, a member\nof the Minuteman Library Network\n781-316-3200\n700 Massachusetts Ave Arlington, MA "]]></textFieldExpression>
+				<textFieldExpression><![CDATA["781-316-3200\n700 Massachusetts Ave Arlington, MA\nrobbinslibrary.org\n"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="40" width="176" height="40" uuid="735d6aba-7009-40b5-b4f7-66a1542b661e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using\nthe Robbins Library, a member\nof the Minuteman Library Network "]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
