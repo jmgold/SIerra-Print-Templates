@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-03-30T11:41:01 -->
+<!-- 2018-03-30T14:58:50 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -394,7 +394,7 @@
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using the\nPublic Library of Brookline, a member\nof the Minuteman Library Network \nTo learn about upcoming events, and\nmore, visit us at brooklinelibrary.org"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["You just saved " + "$" + $V{TotalPrice} + " by using the\nPublic Library of Brookline, a member\nof the Minuteman Library Network \nTo learn about upcoming events, and\nmore, visit us online at brooklinelibrary.org"]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
