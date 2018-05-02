@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-05-01T11:22:22 -->
+<!-- 2018-05-02T14:50:48 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -318,8 +318,9 @@
 				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-6" x="410" y="0" width="159" height="18" uuid="3944c920-4f3c-4cd9-9cbe-0f31ab302f7e">
+				<reportElement key="textField-6" x="429" y="0" width="142" height="18" uuid="3944c920-4f3c-4cd9-9cbe-0f31ab302f7e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -357,7 +358,7 @@
 				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="310" y="0" width="100" height="18" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
+				<reportElement x="310" y="0" width="119" height="18" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
