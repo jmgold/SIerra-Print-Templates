@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-10-16T08:18:11 -->
+<!-- 2018-10-17T09:47:03 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="8591fc2f-9697-4bef-bf6c-26449bce6628">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -154,7 +154,7 @@
 				<textFieldExpression><![CDATA[$F{v_i_barcode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-4" positionType="Float" x="60" y="0" width="27" height="298" uuid="ed110f7c-080b-43fa-b3d3-268a04349df8">
+				<reportElement key="textField-4" positionType="Float" x="60" y="140" width="27" height="160" uuid="ed110f7c-080b-43fa-b3d3-268a04349df8">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
