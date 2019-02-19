@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-02-15T14:05:22 -->
+<!-- 2019-02-19T13:38:00 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="191868db-6ac8-4522-869b-59605660e1bf">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -173,7 +173,7 @@
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{v_p_email} != null ? "EMAIL" : "PHONE")]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{v_p_email} != null ? "EMAIL" :  $F{v_p_telephone} != null ? "PHONE" : " ")]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement key="textField" positionType="Float" x="-1" y="279" width="210" height="20" isRemoveLineWhenBlank="true" uuid="e5d36da5-8e08-4a2f-97f2-6aaf227781d1"/>
@@ -186,7 +186,7 @@
 				<textElement>
 					<font size="12" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{v_p_email} != null ? $F{v_p_email} : $F{v_p_telephone})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{v_p_email} == null ? $F{v_p_telephone} : " ")]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
 				<reportElement key="textField-11" positionType="Float" x="-1" y="251" width="210" height="18" uuid="7c6b163c-a98f-4356-afd9-e1796e7d3bf0"/>
@@ -226,6 +226,10 @@
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{v_i_barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="315" width="191" height="51" uuid="ffea0ad1-5994-4b75-a115-bc82cacb8c67"/>
+				<textFieldExpression><![CDATA["                                                                                                                                                    "]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
