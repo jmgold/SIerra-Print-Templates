@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-05-15T14:21:09 -->
+<!-- 2019-05-16T14:14:07 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -380,6 +380,16 @@
 					<paragraph lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[(($F{Item_Publish_Date} == null) ? "" : $F{Item_Publish_Date}) + (($F{Item_Publish_Date_RDA} == null) ? "" : $F{Item_Publish_Date_RDA})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="20" width="188" height="15" uuid="ae0d969a-70be-496a-9efb-f7ffaad4fb02">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
