@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-06-18T11:03:20 -->
+<!-- 2019-06-18T11:21:06 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -11,10 +11,6 @@
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
-	<parameter name="BASE_URL" class="java.lang.String" isForPrompting="false">
-		<parameterDescription><![CDATA[]]></parameterDescription>
-		<defaultValueExpression><![CDATA["https://i1.wp.com/www.brooklinelibrary.org/wp-content/uploads/2019/05/receipt.png?random="]]></defaultValueExpression>
-	</parameter>
 	<field name="Item_Title" class="java.lang.String">
 		<fieldDescription><![CDATA[v_b_title]]></fieldDescription>
 	</field>
@@ -234,9 +230,6 @@
 	<field name="Patron_Mobile_Number_C" class="java.lang.String">
 		<fieldDescription><![CDATA[/notices/common/v_p_mobile_number]]></fieldDescription>
 	</field>
-	<variable name="Random_Number" class="java.lang.String">
-		<variableExpression><![CDATA[Double.toString(Math.random())]]></variableExpression>
-	</variable>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -400,12 +393,12 @@
 				<text><![CDATA[Thank you for using the Brookline Public Library, a member of the Minuteman Library Network. To learn about upcoming events, new collections, and more, visit us at brooklinelibrary.org
 ]]></text>
 			</staticText>
-			<image hAlign="Center" vAlign="Middle" isUsingCache="false" isLazy="true">
+			<image hAlign="Center" vAlign="Middle">
 				<reportElement x="0" y="100" width="176" height="130" uuid="4d9da8d2-5b7d-4a1e-8df4-dc7a65c46910">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
-				<imageExpression><![CDATA[$P{BASE_URL} + $V{Random_Number}]]></imageExpression>
+				<imageExpression><![CDATA["brk-receipt.png"]]></imageExpression>
 			</image>
 		</band>
 	</summary>

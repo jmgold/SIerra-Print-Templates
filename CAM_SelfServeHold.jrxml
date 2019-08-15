@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.0.0.final using JasperReports Library version 6.0.0  -->
-<!-- 2016-12-29T13:05:16 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2019-08-15T09:27:05 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="8591fc2f-9697-4bef-bf6c-26449bce6628">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -132,7 +132,7 @@
 				<textElement>
 					<font size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{v_p_alias} != null ? $F{v_p_alias}: $F{v_p_name})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{v_p_alias} != null ? $F{v_p_alias}: ($F{patron_last_name} != null ? ($F{patron_last_name}.length()< 4 ? $F{patron_last_name}.toUpperCase() + ", " : $F{patron_last_name}.toUpperCase().substring( 0,4 ) + ", ") : "") + ($F{patron_first_name} != null ? ($F{patron_first_name}.length()< 1 ? $F{patron_first_name}.toUpperCase() + " " : $F{patron_first_name}.toUpperCase().substring( 0,1 ) + " ") : "") + ($F{v_p_barcode}.substring( 11,14 )))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement key="textField-3" positionType="Float" x="8" y="177" width="193" height="19" uuid="2515e611-adf5-48b2-8aa8-5df79c42679e"/>
