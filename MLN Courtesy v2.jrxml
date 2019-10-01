@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-09-18T16:39:13 -->
+<!-- 2019-09-19T09:05:27 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Courtesy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="d4ce732f-4f5d-48a2-9d6a-8331f4108dc8">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -613,7 +613,7 @@ Items automatically renewed will display the new due date below.]]></text>
 		<band splitType="Stretch"/>
 	</pageFooter>
 	<lastPageFooter>
-		<band height="199" splitType="Stretch">
+		<band height="209" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<line>
@@ -643,21 +643,6 @@ Items automatically renewed will display the new due date below.]]></text>
 Receive texts when your items are ready for pickup.
 Send text commands to get information about your library account.]]></text>
 			</staticText>
-			<textField pattern="" isBlankWhenNull="false" hyperlinkType="Reference">
-				<reportElement key="textField-52" mode="Opaque" x="0" y="82" width="572" height="30" forecolor="#5169FD" backcolor="#FFFFFF" uuid="f4d6ed45-4c9d-4ed5-b268-b41b56e94699"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="18" isBold="true" isItalic="false" isUnderline="true" pdfFontName="Helvetica-BoldOblique"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Learn how to Opt-In to Text Alerts"]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA["https://www.oslri.org/text-alerts"]]></hyperlinkReferenceExpression>
-				<hyperlinkTooltipExpression><![CDATA["Library Text Alerts"]]></hyperlinkTooltipExpression>
-			</textField>
 			<textField>
 				<reportElement key="staticText-43" stretchType="RelativeToBandHeight" x="0" y="124" width="572" height="19" uuid="3c2c59b0-858f-44e2-9d1e-bf0bde50f681"/>
 				<box>
@@ -671,35 +656,32 @@ Send text commands to get information about your library account.]]></text>
 				</textElement>
 				<textFieldExpression><![CDATA["This is an automated courtesy reminder.  Please do not reply directly to this email."]]></textFieldExpression>
 			</textField>
-			<textField pattern="" isBlankWhenNull="false" hyperlinkType="Reference">
-				<reportElement key="textField-52" mode="Opaque" x="0" y="151" width="571" height="18" forecolor="#5169FD" backcolor="#FFFFFF" uuid="c052160a-61fd-43e1-9aab-a5a720ae87e7"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true" isItalic="false" isUnderline="true" pdfFontName="Helvetica-BoldOblique"/>
+			<textField hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement mode="Transparent" x="0" y="143" width="572" height="22" forecolor="#000099" backcolor="#ECF1EF" uuid="27788307-ad65-4210-9d84-d83c98de4c0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="SansSerif" size="12" isBold="true" isItalic="false" isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["View Your Account Information"]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA["https://catalog.oslri.net/patroninfo"]]></hyperlinkReferenceExpression>
-				<hyperlinkTooltipExpression><![CDATA["Log in to your account"]]></hyperlinkTooltipExpression>
+				<textFieldExpression><![CDATA["Account Login"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://library.minlib.net/iii/cas/login"]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["https://library.minlib.net/iii/cas/login"]]></hyperlinkTooltipExpression>
 			</textField>
-			<textField pattern="" isBlankWhenNull="false" hyperlinkType="Reference">
-				<reportElement key="textField-52" mode="Opaque" x="0" y="169" width="570" height="20" forecolor="#5169FD" backcolor="#FFFFFF" uuid="2c7fdb79-ce72-4b42-b023-df5fe1a2c150"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true" isItalic="false" isUnderline="true" pdfFontName="Helvetica-BoldOblique"/>
+			<textField hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement mode="Transparent" x="2" y="82" width="569" height="35" forecolor="#000099" backcolor="#ECF1EF" uuid="5f3f4ce5-3372-4e0a-a03e-a1d7d4f5f41f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="16" isBold="true" isItalic="false" isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["eZone Digital Downloads"]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA["https://riezone.overdrive.com/"]]></hyperlinkReferenceExpression>
-				<hyperlinkTooltipExpression><![CDATA["Visit the Ocean State Libraries eZone"]]></hyperlinkTooltipExpression>
+				<textFieldExpression><![CDATA["Sign Up for Library Text Message Notices"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://www.minlib.net/services#text-messages"]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["https://www.minlib.net/services#text-messages"]]></hyperlinkTooltipExpression>
+			</textField>
+			<textField hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement mode="Transparent" x="0" y="167" width="571" height="20" forecolor="#000099" backcolor="#ECF1EF" uuid="3393f5ae-ecff-41ef-b69f-fa1100e4aa48"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="SansSerif" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Overdrive Digital Collection"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://minuteman.overdrive.com/"]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["https://minuteman.overdrive.com/"]]></hyperlinkTooltipExpression>
 			</textField>
 		</band>
 	</lastPageFooter>
