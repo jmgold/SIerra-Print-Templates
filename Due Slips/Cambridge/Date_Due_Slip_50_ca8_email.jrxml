@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-24T13:34:13 -->
+<!-- 2019-10-24T13:42:16 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d58f5d3-4949-4022-86ed-b85b6fa72a13">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -402,11 +402,11 @@
 		<band splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="117" splitType="Stretch">
+		<band height="108" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="5" y="40" width="545" height="77" uuid="e0a9904a-8f39-44e8-9c3e-1cd7ee8246f8"/>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="5" y="40" width="545" height="50" uuid="e0a9904a-8f39-44e8-9c3e-1cd7ee8246f8"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -416,9 +416,8 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Cambridge Public Library
-617-349-4040
-]]></text>
+				<text><![CDATA[Thank you for visiting O'Neill
+Come back soon!]]></text>
 			</staticText>
 		</band>
 	</summary>
