@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-18T09:27:49 -->
+<!-- 2019-10-30T15:32:18 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -242,9 +242,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="88" splitType="Stretch">
+		<band height="110" splitType="Stretch">
 			<staticText>
-				<reportElement key="staticText-23" x="0" y="10" width="172" height="30" uuid="45109000-7efe-46ef-a916-9fbd1e97b84f"/>
+				<reportElement key="staticText-23" x="0" y="10" width="172" height="30" uuid="1cca233a-073d-4872-b1f4-920b61bc05c8"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -257,7 +257,7 @@
 				<text><![CDATA[ Date Due Receipt]]></text>
 			</staticText>
 			<staticText>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="40" width="70" height="17" uuid="5662ceee-21ce-4285-8bc5-0312e8c1585f"/>
+				<reportElement key="staticText-44" x="0" y="60" width="100" height="20" uuid="c335e2b5-c985-47a4-870d-d474c7bbc582"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -265,12 +265,35 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font size="10"/>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Items checked out to]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField" x="100" y="60" width="76" height="19" uuid="7158c3f6-60dc-4e5a-9144-39edb5420ce3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{Patron_Record_ID_C}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="40" width="70" height="17" uuid="b188d290-a8b6-4c76-9ce5-c0a578676c7b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Checkout date:]]></text>
 			</staticText>
 			<textField evaluationTime="Report" pattern="MM/dd/yyyy" isBlankWhenNull="false">
-				<reportElement key="textField" x="75" y="40" width="97" height="17" uuid="55153cdc-4f03-44ed-938d-099e487969db"/>
+				<reportElement key="textField" x="75" y="40" width="97" height="17" uuid="49b954aa-f876-47a7-8167-475bf419094f"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -278,23 +301,10 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left">
-					<font size="10"/>
+					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement key="staticText-44" x="0" y="60" width="172" height="20" uuid="8132f8bd-ee5d-4003-8956-cb25a6973d78"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center">
-					<font size="10" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Items checked out]]></text>
-			</staticText>
 		</band>
 	</title>
 	<pageHeader>
@@ -394,23 +404,26 @@
 		<band splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="85" splitType="Stretch">
+		<band height="110" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="20" width="176" height="50" uuid="02788a81-b17d-49b9-8a88-e885750c91be"/>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="20" width="176" height="90" uuid="7454a668-3db2-4adc-a67e-68f04693c1de"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement>
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Belmont Public Library
+				<text><![CDATA[Thanks for visiting the                Belmont Public Library!
 617-489-2000
-belmontpubliclibrary.net]]></text>
+belmontpubliclibrary.net
+
+Download the MLNMobile app!
+Available for Apple and Android]]></text>
 			</staticText>
 		</band>
 	</summary>

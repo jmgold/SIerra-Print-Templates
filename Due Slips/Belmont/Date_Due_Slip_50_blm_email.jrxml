@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-18T09:27:48 -->
+<!-- 2019-10-30T15:32:17 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d58f5d3-4949-4022-86ed-b85b6fa72a13">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -242,7 +242,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="190" splitType="Stretch">
+		<band height="172" splitType="Stretch">
 			<staticText>
 				<reportElement key="staticText-11" mode="Opaque" x="5" y="0" width="564" height="93" backcolor="#FFFFFF" uuid="80552770-598b-43a6-a3bb-1556d723f70e"/>
 				<box>
@@ -280,19 +280,6 @@
 				<text><![CDATA[ Date Due Receipt]]></text>
 			</staticText>
 			<staticText>
-				<reportElement key="staticText-44" x="5" y="130" width="564" height="39" uuid="8761bfd9-5385-4ca0-a746-1cb66449261c"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[You have checked out the following item(s):]]></text>
-			</staticText>
-			<staticText>
 				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="5" y="93" width="105" height="29" uuid="04c827d5-0014-42bd-9feb-44ff4281ca4d"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -304,6 +291,32 @@
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[Checkout date:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField" x="270" y="130" width="285" height="19" uuid="4717997a-1b73-4f24-b6df-6c4f44e47844"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Patron_Record_ID_C}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-44" x="5" y="130" width="265" height="20" uuid="58f74946-99c7-4f50-9cac-28e7ab7fb447"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Items checked out to]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -416,9 +429,12 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Belmont Public Library
+				<text><![CDATA[Thanks for visiting the                Belmont Public Library!
 617-489-2000
-belmontpubliclibrary.net]]></text>
+belmontpubliclibrary.net
+
+Download the MLNMobile app!
+Available for Apple and Android]]></text>
 			</staticText>
 		</band>
 	</summary>
