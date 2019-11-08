@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-30T12:25:33 -->
+<!-- 2019-11-05T16:31:19 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Courtesy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="d4ce732f-4f5d-48a2-9d6a-8331f4108dc8">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -272,14 +272,14 @@
 	</background>
 	<title>
 		<band height="170" splitType="Stretch">
-			<image isLazy="true">
-				<reportElement x="170" y="0" width="209" height="81" uuid="96510361-c120-42ce-a6b2-276b06dd3149">
+			<image scaleImage="FillFrame" isLazy="true">
+				<reportElement x="60" y="0" width="440" height="76" uuid="96510361-c120-42ce-a6b2-276b06dd3149">
 					<property name="local_mesure_unitwidth" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="local_mesure_unitheight" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<imageExpression><![CDATA["https://www.minlib.net/sites/default/files/glazed_builder_images/logo-print-small.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["https://www.minlib.net/sites/default/files/glazed_builder_images/logo-print-notice.jpg"]]></imageExpression>
 			</image>
 			<line>
 				<reportElement positionType="Float" x="-20" y="82" width="611" height="2" forecolor="#003399" uuid="a8316339-365d-48f7-9d2f-2437078cafbe">
