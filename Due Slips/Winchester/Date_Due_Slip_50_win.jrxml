@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-21T15:26:31 -->
+<!-- 2019-11-14T10:50:04 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -394,11 +394,11 @@
 		<band splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="58" splitType="Stretch">
+		<band height="112" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
-			<staticText>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="10" width="176" height="48" uuid="c6f92669-3337-400e-9512-c2b417638ff7"/>
+			<textField>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="10" width="176" height="102" uuid="580b35f0-b8b1-475e-b942-7425336f5dd4"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -408,10 +408,8 @@
 				<textElement textAlignment="Center">
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Winchester Public Library
-(781)-721-7171
-www.winpublib.org]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["Winchester Public Library\n(781)-721-7171\nwww.winpublib.org\n\n\n\n\n\n\n\n"]]></textFieldExpression>
+			</textField>
 		</band>
 	</summary>
 </jasperReport>

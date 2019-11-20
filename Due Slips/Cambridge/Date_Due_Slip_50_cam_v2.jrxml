@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-11-12T15:10:02 -->
+<!-- 2019-11-13T12:49:04 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -362,7 +362,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left">
-					<font size="15" isBold="false"/>
+					<font size="14" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
 			</textField>
@@ -389,7 +389,7 @@
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["You have saved " + $F{Item_Price_Total} + " by\nusing your local library!\n\n617-349-4040\ncambridgema.gov/cpl"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["You just saved " + $F{Item_Price_Total} + " by\nusing your local library!\n\n617-349-4040\ncambridgema.gov/cpl"]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
