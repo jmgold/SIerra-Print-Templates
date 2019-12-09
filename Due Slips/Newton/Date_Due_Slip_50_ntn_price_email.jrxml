@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-11-26T13:53:06 -->
+<!-- 2019-11-27T09:18:58 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d58f5d3-4949-4022-86ed-b85b6fa72a13">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -423,7 +423,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["www.NewtonFreeLibrary.net\n(617) 796-1360\nYou saved " + $F{Item_Price_Total} + " by using\nthe Newton Free library\n"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["www.NewtonFreeLibrary.net\n(617) 796-1360\n\nYou saved " + $F{Item_Price_Total} + " by using the Newton Free Library!"]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
