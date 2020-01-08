@@ -548,8 +548,8 @@ Items automatically renewed will display the new due date below.]]></text>
 					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Check your library account at this link"]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA["https://library.minlib.net/iii/cas/login"]]></hyperlinkReferenceExpression>
-				<hyperlinkTooltipExpression><![CDATA["https://library.minlib.net/iii/cas/login"]]></hyperlinkTooltipExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://find.minlib.net/iii/encore/myaccount"]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["https://find.minlib.net/iii/encore/myaccount"]]></hyperlinkTooltipExpression>
 			</textField>
 			<textField hyperlinkType="Reference" hyperlinkTarget="Blank">
 				<reportElement mode="Transparent" x="81" y="50" width="199" height="35" forecolor="#000099" backcolor="#ECF1EF" uuid="5f3f4ce5-3372-4e0a-a03e-a1d7d4f5f41f"/>
