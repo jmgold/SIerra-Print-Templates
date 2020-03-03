@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2020-02-26T10:57:35 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="216" pageHeight="792" columnWidth="176" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0817447-e043-45b7-b947-b2a1f534e95e">
+<!-- 2020-03-02T14:21:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d58f5d3-4949-4022-86ed-b85b6fa72a13">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="1.0"/>
@@ -242,9 +242,32 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="78" splitType="Stretch">
+		<band height="188" splitType="Stretch">
 			<staticText>
-				<reportElement key="staticText-23" x="0" y="10" width="172" height="30" uuid="45109000-7efe-46ef-a916-9fbd1e97b84f"/>
+				<reportElement key="staticText-11" mode="Opaque" x="5" y="0" width="564" height="93" backcolor="#FFFFFF" uuid="80552770-598b-43a6-a3bb-1556d723f70e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField evaluationTime="Report" pattern="MM/dd/yyyy" isBlankWhenNull="false">
+				<reportElement key="textField" x="5" y="93" width="564" height="29" uuid="1e78412e-8da1-42c0-b080-9dda3440888e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-23" x="137" y="19" width="275" height="54" uuid="980ca2cc-1b5a-42c8-b457-10bd47722024"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -252,35 +275,23 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="15" isBold="true" isUnderline="false" pdfFontName="Helvetica"/>
+					<font size="20" isBold="false" isUnderline="false" pdfFontName="Helvetica"/>
 				</textElement>
 				<text><![CDATA[ Date Due Receipt]]></text>
 			</staticText>
 			<staticText>
-				<reportElement key="staticText-44" x="0" y="50" width="90" height="20" uuid="8132f8bd-ee5d-4003-8956-cb25a6973d78">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
+				<reportElement key="staticText-44" x="5" y="130" width="564" height="39" uuid="8761bfd9-5385-4ca0-a746-1cb66449261c"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement>
-					<font size="10" isBold="false"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Checked out to ]]></text>
+				<text><![CDATA[You have checked out the following item(s):]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField" x="90" y="50" width="86" height="19" uuid="0cf79e6c-c920-4139-8ff2-1ca53e7e13b6"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textFieldExpression><![CDATA[$F{Patron_Barcode_C}]]></textFieldExpression>
-			</textField>
 		</band>
 	</title>
 	<pageHeader>
@@ -290,13 +301,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="88" splitType="Stretch">
-			<property name="local_mesure_unitheight" value="pixel"/>
-			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		<band height="59" splitType="Stretch">
 			<staticText>
-				<reportElement key="staticText-24" stretchType="RelativeToTallestObject" x="0" y="3" width="46" height="20" uuid="2e81e0fe-e3f4-4db4-a068-1afb34c9a36a">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
+				<reportElement key="staticText-24" stretchType="RelativeToTallestObject" x="5" y="9" width="333" height="20" uuid="806bd727-635b-4b12-bffb-cd5e954c0319"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -304,29 +311,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font size="10" isBold="false"/>
+					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Title]]></text>
+				<text><![CDATA[TITLE]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="textField-48" x="46" y="60" width="130" height="20" uuid="4b57c766-bab1-4e02-9294-6dac51fc3dde">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box rightPadding="1">
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Left">
-					<font size="10" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Due_Date}]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement key="staticText-25" positionType="Float" x="0" y="40" width="46" height="20" uuid="d765981d-3f4c-4833-8d32-96ffefc9f310">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
+				<reportElement key="staticText-25" positionType="Float" x="338" y="9" width="129" height="20" uuid="3ff9864c-33d4-4dbb-8b80-ff59c9c631a9"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -334,45 +324,38 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font size="10" isBold="false"/>
+					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Barcode ]]></text>
+				<text><![CDATA[BARCODE]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="textField" x="46" y="40" width="130" height="20" uuid="40409fff-9718-483a-b849-0101472cb078">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box rightPadding="0">
+			<staticText>
+				<reportElement key="staticText-43" positionType="Float" x="467" y="9" width="101" height="20" uuid="5a5e4f09-a3ab-4726-a7b8-adfee3e8069f"/>
+				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font size="10" isBold="false"/>
-					<paragraph lineSpacingSize="0.0"/>
+				<textElement>
+					<font size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
-			</textField>
+				<text><![CDATA[DUE DATE]]></text>
+			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-46" x="46" y="3" width="130" height="37" uuid="c8e1fe80-d7fd-4469-b8e1-20e95c408745">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box rightPadding="1">
+				<reportElement key="textField-46" x="5" y="29" width="333" height="21" uuid="a8aa30bd-22eb-44a3-9257-b2ab620cb8b0"/>
+				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font size="10" isBold="false"/>
+				<textElement>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement key="staticText-43" positionType="Float" x="0" y="60" width="46" height="20" uuid="e205197d-afee-4d88-8181-da230af22771">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-48" x="467" y="29" width="101" height="21" uuid="a5ac3e87-882c-4608-92ce-81c3f4251f8e"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -380,10 +363,23 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font size="10" isBold="false"/>
+					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Due Date]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[$F{Item_Due_Date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="338" y="29" width="129" height="21" uuid="772a9849-8f0f-42af-8189-bfa9e4f3c13f"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 	<columnFooter>
@@ -393,37 +389,11 @@
 		<band splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="124" splitType="Stretch">
+		<band height="157" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
-			<textField>
-				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="0" y="0" width="176" height="80" uuid="735d6aba-7009-40b5-b4f7-66a1542b661e"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Left">
-					<font size="10" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA["You have saved " + $F{Item_Price_Total} + " by using the Holliston Public Library, a member of the Minuteman Library Network. \n\nwww.hollistonlibrary.org \nTel: 508-429-0617"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report" pattern="MM/dd/yyyy hh:mm:ss a" isBlankWhenNull="false">
-				<reportElement key="textField" x="0" y="107" width="172" height="17" uuid="79eccb05-227b-455c-b82b-775561d581dd"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center">
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement key="textField" x="0" y="90" width="172" height="17" uuid="92b7baf1-d3ab-4e70-a0de-4d125e831ecf"/>
+				<reportElement key="staticText-45" stretchType="RelativeToTallestObject" x="5" y="20" width="545" height="97" uuid="e0a9904a-8f39-44e8-9c3e-1cd7ee8246f8"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -431,9 +401,13 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center">
-					<font size="10" isBold="true"/>
+					<font size="14"/>
 				</textElement>
-				<text><![CDATA[Checked out on: ]]></text>
+				<text><![CDATA[Get Counted at
+Concord Free Public Library
+US Federal Census 2020
+978-318-3300
+www.concordlibrary.org]]></text>
 			</staticText>
 		</band>
 	</summary>
