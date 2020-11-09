@@ -19,4 +19,7 @@ In the case of [Wellesley](https://github.com/Minuteman-Library-Network/SIerra-P
 
 ![wellesley.png](https://github.com/Minuteman-Library-Network/SIerra-Print-Templates/blob/work/Due%20Slips/img/wellesley.png)
 
+The Ashland library opted to take advantage of the Item_Price_Total field introduced in 5.0.  As an example of that here is [the email form of their template](https://github.com/Minuteman-Library-Network/SIerra-Print-Templates/blob/work/Due%20Slips/Ashland/Date_Due_Slip_50_ash_price_email.jrxml).
 
+
+![email%20cost%20savings.png](https://github.com/Minuteman-Library-Network/SIerra-Print-Templates/blob/work/Due%20Slips/img/email%20cost%20savings.png)
