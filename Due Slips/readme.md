@@ -13,5 +13,6 @@ In the case of [Wellesley](https://github.com/Minuteman-Library-Network/SIerra-P
 * Removed the patron's name from the slip
 * Added a fixed message to the footer
 * Centered all text and removed bold formatting
-
 ![wellesley.png](https://github.com/Minuteman-Library-Network/SIerra-Print-Templates/blob/work/Due%20Slips/img/wellesley.png)
+
+
