@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="_ls101Gyld.29.feb.2008" columnCount="8" pageWidth="612" pageHeight="792" columnWidth="72" leftMargin="17" rightMargin="17" topMargin="17" bottomMargin="17">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="callAlphaStart" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 1: subfield a/h (1st occurrence only of subfield a), alpha content until first number; from c-tagged varfld Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callNumericStart" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 2: subfield a/h (1st occurrence only of subfield a), numerical content until decimal point, from c-tagged varfld Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callNumericAfterDec" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 3: subfield a/h (1st occurrence only of subfield a), numerical content following decimal point, from c-tagged varfld (assume that customer may interpolate the decimal point as desired) Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callEndCR" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 4: subfield a/h (1st occurrence only of subfield a), all remaining content following 1-3 (with carriage returns for spaces), from c-tagged varfld Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callSubbCR" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 5: subfield b/I (1st occurrence only of subfield b), content (with carriage returns for spaces), from c-tagged varfld  (assume that customer may interpolate decimal point if desired Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callSuba" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 6: subfield a/h (1st occurrence only of subfield a), all remaining content following 1-3 (without carriage returns for spaces), from c-tagged varfld Purpose: call number for pocket labels]]></fieldDescription>
+	</field>
+	<field name="callSubb" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 7: subfield b/I (1st occurrence only of subfield b), content (without carriage returns for spaces), from c-tagged varfld Purpose: call number for pocket labels]]></fieldDescription>
+	</field>
+	<field name="callSubf" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 8: subfield f, from c-tagged varfld Purpose: call number prestamp]]></fieldDescription>
+	</field>
+	<field name="callSubj" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 9: subfield j, from c-tagged varfld Purpose: call number shelving control no.]]></fieldDescription>
+	</field>
+	<field name="callSubk" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 10: subfield k, from c-tagged varfld Purpose: call number poststamp]]></fieldDescription>
+	</field>
+	<field name="itemFix58" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 11: ff58 from item record Purpose: copy number]]></fieldDescription>
+	</field>
+	<field name="itemFix79" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 12: ff79 from item record Purpose: item location]]></fieldDescription>
+	</field>
+	<field name="itemFix79Len3" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 13: first three letters of ff79 from item record Purpose: item location]]></fieldDescription>
+	</field>
+	<field name="branchesLabel" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 14: label from branches file that corresponds to data in ff79 from item record Purpose: item location]]></fieldDescription>
+	</field>
+	<field name="concatIndex" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 15: concatenated author-title data, derived from values in concat_index EO – only first occurrence of subfield a is used    Purpose:  concatenated author-title]]></fieldDescription>
+	</field>
+	<field name="acctname" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 16: library name from acctname file      Purpose: library name]]></fieldDescription>
+	</field>
+	<field name="bibt" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 17: subfield a from the first t-tagged field from bib record, regardless of MARC tag    Purpose: title]]></fieldDescription>
+	</field>
+	<field name="bib245" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 18: subfield a (1st occurrence only of subfield a) from the first 245 or 200 field from bib record, regardless of field group tag    Purpose: title]]></fieldDescription>
+	</field>
+	<field name="itema" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 19: 1st instance each of 'a' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemb" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 20: 1st instance each of 'b' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemc" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 21: 1st instance each of 'c' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemd" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 22: 1st instance each of 'd' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="iteme" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 23: 1st instance each of 'e' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemf" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 24: 1st instance each of 'f' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemg" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 25: 1st instance each of 'g' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemh" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 26: 1st instance each of 'h' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemi" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 27: 1st instance each of 'i' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemj" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 28: 1st instance each of 'j' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemk" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 29: 1st instance each of 'k' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="iteml" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 30: 1st instance each of 'l' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemm" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 31: 1st instance each of 'm' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemn" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 32: 1st instance each of 'n' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemo" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 33: 1st instance each of 'o' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemp" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 34: 1st instance each of 'p' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemq" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 35: 1st instance each of 'q' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemr" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 36: 1st instance each of 'r' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="items" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 37: 1st instance each of 's' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemt" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 38: 1st instance each of 't' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemu" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 39: 1st instance each of 'u' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemv" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 40: 1st instance each of 'v' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemw" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 41: 1st instance each of 'w' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemx" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 42: 1st instance each of 'x' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemy" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 43: 1st instance each of 'y' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="itemz" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 44: 1st instance each of 'z' tagged field from item record Purpose: varfld from item]]></fieldDescription>
+	</field>
+	<field name="concatIndexCR" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 45: concatenated author-title data, derived from values in concat_index EO - only first occurrence of subfield a is used – data is same as is used in #15 but has carriage return between elements, not spaces (vertical arrangement of data not horizontal)    Purpose: concatenated author-title]]></fieldDescription>
+	</field>
+	<field name="callField" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 46: subfield a/h, entire content 'as is', from c-tagged field, including dashes         Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="itemFix58c" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 47: ff58 from item record with "c." prepended Purpose: copy number]]></fieldDescription>
+	</field>
+	<field name="callNumericAll" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 48: Element#2 (callNumericStart) & Element#3 (callNumericAfterDec) concatenated into one element Purpose: call number]]></fieldDescription>
+	</field>
+	<field name="callEntire" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 49: all subfields of the call field]]></fieldDescription>
+	</field>
+	<field name="callEntireCR" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 50: all subfields of the call field delimited by carriage returns]]></fieldDescription>
+	</field>
+	<field name="callSubc" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 51: subfield c (1st occurrence only of subfield c) from c-tagged varfld Purpose: call number for pocket labels]]></fieldDescription>
+	</field>
+	<field name="callSubp" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 52: subfield p (1st occurrence only of subfield p) from c-tagged varfld Purpose: call number for pocket labels]]></fieldDescription>
+	</field>
+	<field name="biba" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 53: subfield a-z from the first a-tagged field from bib record, regardless of MARC tag    Purpose: author]]></fieldDescription>
+	</field>
+	<field name="bib245b" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 54: subfield b (1st occurrence only of subfield b) from the first 245 or 200 field from bib record, regardless of field group tag    Purpose: title]]></fieldDescription>
+	</field>
+	<field name="bib245n" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 55: subfield n (1st occurrence only of subfield n) from the first 245 or 200 field from bib record, regardless of field group tag    Purpose: title]]></fieldDescription>
+	</field>
+	<field name="bib245p" class="java.lang.String">
+		<fieldDescription><![CDATA[Data Element 56: subfield p (1st occurrence only of subfield p) from the first 245 or 200 field from bib record, regardless of field group tag    Purpose: title]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="108" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="11" y="10" width="58" height="98"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{callSubf} + ($F{callSubf}.equals("") ? "" : "\n") + $F{callAlphaStart} + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericAll} + ($F{callNumericAll}.equals("") ? "" : "\n")  + $F{callEndCR} + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{callSubbCR} + ($F{callSubbCR}.equals("") ? "" : "\n") + $F{itemv}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
