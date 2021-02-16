@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2021-02-12T09:13:14 -->
+<!-- 2021-02-16T10:42:53 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="967c7b2c-e0c9-43d3-a99c-6c99686ebed4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
@@ -298,7 +299,9 @@
 	<detail>
 		<band height="101" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="textField-4" x="0" y="30" width="569" height="20" uuid="d20f02a7-29a9-4fea-a15e-f421331027df"/>
+				<reportElement key="textField-4" x="0" y="30" width="569" height="20" uuid="d20f02a7-29a9-4fea-a15e-f421331027df">
+					<property name="net.sf.jasperreports.text.truncate.at.char" value="true"/>
+				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -324,7 +327,7 @@
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-6" x="0" y="10" width="179" height="20" uuid="dc45e3f8-ba83-4854-9704-3323c596eb9a"/>
+				<reportElement key="textField-6" x="0" y="10" width="260" height="20" uuid="dc45e3f8-ba83-4854-9704-3323c596eb9a"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -335,19 +338,6 @@
 					<font fontName="Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-7" x="400" y="10" width="169" height="20" uuid="feb54377-b28c-4cfc-9349-ad556a4e8059"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right">
-					<font fontName="Serif" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Bib_Record_Id}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement key="textField-8" x="0" y="70" width="188" height="20" uuid="43ee5be4-e116-4dee-b36b-91ab540f3599"/>
@@ -363,7 +353,7 @@
 				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-7" x="200" y="10" width="200" height="20" uuid="9d0b9def-075f-43ee-9e6e-36aeb14a5a83"/>
+				<reportElement key="textField-7" x="300" y="10" width="270" height="20" uuid="9d0b9def-075f-43ee-9e6e-36aeb14a5a83"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
