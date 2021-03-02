@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2021-02-16T10:42:53 -->
+<!-- 2021-02-19T13:25:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="967c7b2c-e0c9-43d3-a99c-6c99686ebed4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -311,7 +311,7 @@
 				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Item_Title}.length() < 94 ? $F{Item_Title} : $F{Item_Title}.substring( 0,94 )]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement key="textField-5" x="0" y="50" width="492" height="20" uuid="49121deb-0582-467e-b629-babc1bd0d30b"/>
