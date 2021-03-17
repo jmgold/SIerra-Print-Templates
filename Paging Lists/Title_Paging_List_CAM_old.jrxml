@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2021-03-17T15:24:07 -->
+<!-- 2021-03-17T15:31:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="967c7b2c-e0c9-43d3-a99c-6c99686ebed4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -297,9 +297,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="119" splitType="Stretch">
+		<band height="101" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="textField-4" x="0" y="50" width="569" height="20" uuid="d20f02a7-29a9-4fea-a15e-f421331027df">
+				<reportElement key="textField-4" x="0" y="30" width="569" height="20" uuid="d20f02a7-29a9-4fea-a15e-f421331027df">
 					<property name="net.sf.jasperreports.text.truncate.at.char" value="true"/>
 				</reportElement>
 				<box>
@@ -308,20 +308,20 @@
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
+				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Title}.length() < 75 ? $F{Item_Title} : $F{Item_Title}.substring( 0,75 )]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Item_Title}.length() < 94 ? $F{Item_Title} : $F{Item_Title}.substring( 0,94 )]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-5" x="0" y="70" width="492" height="20" uuid="49121deb-0582-467e-b629-babc1bd0d30b"/>
+				<reportElement key="textField-5" x="0" y="50" width="492" height="20" uuid="49121deb-0582-467e-b629-babc1bd0d30b"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
+				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
@@ -334,33 +334,33 @@
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
+				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Location}.replaceAll("CAMBRIDGE/","")]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-8" x="0" y="90" width="188" height="20" uuid="43ee5be4-e116-4dee-b36b-91ab540f3599"/>
+				<reportElement key="textField-8" x="0" y="70" width="188" height="20" uuid="43ee5be4-e116-4dee-b36b-91ab540f3599"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
+				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-7" x="0" y="30" width="270" height="20" uuid="9d0b9def-075f-43ee-9e6e-36aeb14a5a83"/>
+				<reportElement key="textField-7" x="300" y="10" width="270" height="20" uuid="9d0b9def-075f-43ee-9e6e-36aeb14a5a83"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left">
+				<textElement>
 					<font fontName="Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Call_Number}]]></textFieldExpression>
