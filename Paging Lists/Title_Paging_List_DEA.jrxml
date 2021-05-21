@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2021-05-12T13:43:32 -->
+<!-- 2021-05-21T10:02:41 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -263,21 +263,7 @@
 	<pageHeader>
 		<band height="21">
 			<textField evaluationTime="Report" pattern="MM/dd/yyyy  hh:mm a" isBlankWhenNull="false">
-				<reportElement key="textField" x="0" y="0" width="180" height="20" uuid="35f3eb6b-2572-449a-984b-187e84b801c4"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="SansSerif" size="10"/>
-					<paragraph lineSpacingSize="0.0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Master" pattern="MM/dd/yyyy" isBlankWhenNull="false">
-				<reportElement key="textField" x="420" y="0" width="149" height="20" uuid="a0abac0f-bf86-4391-8b42-dc022c328817"/>
+				<reportElement key="textField" x="389" y="0" width="180" height="20" uuid="35f3eb6b-2572-449a-984b-187e84b801c4"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -285,6 +271,20 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Master" pattern="MM/dd/yyyy" isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="0" width="149" height="20" uuid="a0abac0f-bf86-4391-8b42-dc022c328817"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left">
 					<font fontName="SansSerif" size="10"/>
 					<paragraph lineSpacingSize="0.0"/>
 				</textElement>
@@ -300,9 +300,9 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="37" splitType="Stretch">
+		<band height="79" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-4" x="0" y="15" width="300" height="20" uuid="6a302657-d595-4b4c-81f3-d69b540cfb16"/>
+				<reportElement key="textField-4" x="0" y="15" width="569" height="20" uuid="6a302657-d595-4b4c-81f3-d69b540cfb16"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -310,15 +310,22 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font fontName="Serif" size="11" isBold="true"/>
+					<font fontName="Serif" size="11"/>
 					<paragraph lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Title}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement key="textField-8" x="0" y="0" width="180" height="15" uuid="6ffb65ad-494b-4b2b-adfe-514fc572d47f">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			<textField>
+				<reportElement x="445" y="0" width="124" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-4" x="0" y="33" width="569" height="20" uuid="3cd682f1-ec06-4eae-926b-9f033bad7121"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -327,36 +334,41 @@
 				</box>
 				<textElement>
 					<font fontName="Serif" size="11"/>
-					<paragraph lineSpacingSize="0.0"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(($F{Item_Publisher} == null) ? "" : $F{Item_Publisher}) + (($F{Item_Publisher_RDA} == null) ? "" : $F{Item_Publisher_RDA})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-4" x="0" y="53" width="569" height="20" uuid="4e2d8f87-9663-4add-a303-687b50caad67"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Serif" size="11"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Item_Pickup_Location}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="-1" width="180" height="15" uuid="ad5b4fc9-24cd-418b-b5c6-84f53b515cbe">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="180" y="0" width="280" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
-				<textElement>
-					<font fontName="Serif" size="11" isBold="true"/>
-					<paragraph lineSpacingSize="0.0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="460" y="0" width="110" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textElement>
-					<font fontName="Serif" size="11" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{Item_Barcode}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="300" y="15" width="270" height="20" uuid="a750e783-e3df-4b45-ae02-379e0b791a89">
+				<reportElement x="180" y="0" width="260" height="15" uuid="5c90b24d-dae1-4712-a1b0-b454e7e940de">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Serif" size="11"/>
-					<paragraph lineSpacingSize="1.0"/>
+					<font fontName="Serif" size="11" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA[" " + (($F{Item_Author} == null) ? "" : $F{Item_Author})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
