@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2020-08-31T11:13:29 -->
+<!-- 2021-06-09T08:35:26 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -315,7 +315,7 @@
 				<textFieldExpression><![CDATA[$F{Item_Location}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="110" y="0" width="370" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
+				<reportElement x="110" y="0" width="340" height="15" uuid="a1358766-437c-486d-ac79-b8c877136d24"/>
 				<textElement>
 					<font fontName="Serif" size="11" isBold="true"/>
 					<paragraph lineSpacingSize="0.0"/>
@@ -323,7 +323,7 @@
 				<textFieldExpression><![CDATA[" " + $F{Item_Call_Number} + (($F{Item_Volume} == null) ? "" : $F{Item_Volume})]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="480" y="0" width="90" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
+				<reportElement x="450" y="0" width="120" height="15" uuid="d0a20bb3-290a-4915-945c-395b843fdeaf">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
