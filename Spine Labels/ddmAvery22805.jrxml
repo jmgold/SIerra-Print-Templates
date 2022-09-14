@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2022-08-22T11:19:23 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ddmAvery22805" columnCount="4" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="119" columnSpacing="22" leftMargin="34" rightMargin="34" topMargin="56" bottomMargin="56" uuid="92bfedee-0fb9-443f-a46c-0fc997c48b66">
+<!-- 2022-09-02T15:19:19 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ddmAvery22805" columnCount="4" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="118" columnSpacing="16" leftMargin="56" rightMargin="34" topMargin="56" bottomMargin="56" uuid="92bfedee-0fb9-443f-a46c-0fc997c48b66">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
 	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
 	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
@@ -203,8 +201,9 @@
 		<band height="126" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<textField isBlankWhenNull="false">
-				<reportElement key="textField" x="10" y="0" width="106" height="108" uuid="abe8b3c1-31f7-4a8f-b65c-751b243b3328">
+				<reportElement key="textField" x="3" y="0" width="114" height="108" uuid="abe8b3c1-31f7-4a8f-b65c-751b243b3328">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
