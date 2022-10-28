@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2022-10-19T14:52:58 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="5" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="115" leftMargin="18" rightMargin="18" topMargin="36" bottomMargin="9" uuid="02d303b5-deb5-400e-b631-0161e4f38e99">
+<!-- 2022-10-07T11:04:55 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ddmAvery22805" columnCount="4" printOrder="Horizontal" pageWidth="612" pageHeight="794" columnWidth="114" columnSpacing="16" leftMargin="56" rightMargin="34" topMargin="56" bottomMargin="0" uuid="92bfedee-0fb9-443f-a46c-0fc997c48b66">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
@@ -191,22 +198,22 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="72" splitType="Prevent">
+		<band height="123" splitType="Prevent">
 			<textField isBlankWhenNull="false">
-				<reportElement key="textField" x="11" y="0" width="102" height="71" uuid="b1ce2736-f4be-46db-b2fa-99cc58e03698">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				<reportElement key="textField" x="3" y="1" width="114" height="105" uuid="abe8b3c1-31f7-4a8f-b65c-751b243b3328">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
-				<box topPadding="1" bottomPadding="0">
+				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement textAlignment="Left" verticalAlignment="Bottom">
-					<font fontName="DejaVu Sans" size="12" isBold="false"/>
-					<paragraph lineSpacingSize="0.7"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="14" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{callAlphaStart} + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericAll} + ($F{callNumericAll}.equals("") ? "" : "\n")  + $F{callEndCR} + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{callSubbCR} + ($F{callSubbCR}.equals("") ? "" : "\n") + $F{itemv}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{callAlphaStart} + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericAll} + ($F{callNumericAll}.equals("") ? "" : "\n")  + $F{callEndCR} + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{callSubbCR} + ($F{callSubbCR}.equals("") ? "" : "\n")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
