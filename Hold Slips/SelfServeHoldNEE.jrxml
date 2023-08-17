@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2022-08-04T10:31:01 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="d74c3143-b519-44d2-bd14-18f4a8fbcf3a">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="v_p_barcode" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron barcode]]></fieldDescription>
+	</field>
+	<field name="v_i_barcode" class="java.lang.String">
+		<fieldDescription><![CDATA[Item barcode]]></fieldDescription>
+	</field>
+	<field name="v_b_title" class="java.lang.String">
+		<fieldDescription><![CDATA[Bib title]]></fieldDescription>
+	</field>
+	<field name="v_b_author" class="java.lang.String">
+		<fieldDescription><![CDATA[Bib author]]></fieldDescription>
+	</field>
+	<field name="checkin_date" class="java.lang.String">
+		<fieldDescription><![CDATA[Item check-in date formatted using MONEYFMT env var]]></fieldDescription>
+	</field>
+	<field name="login_stat_group" class="java.lang.String">
+		<fieldDescription><![CDATA[Login stat group]]></fieldDescription>
+	</field>
+	<field name="v_b_call_num" class="java.lang.String">
+		<fieldDescription><![CDATA[Call number of item checked in]]></fieldDescription>
+	</field>
+	<field name="v_i_volume" class="java.lang.String">
+		<fieldDescription><![CDATA[Volume of item checked in]]></fieldDescription>
+	</field>
+	<field name="f_i_itemstat" class="java.lang.String">
+		<fieldDescription><![CDATA[Status of item checked in in long format]]></fieldDescription>
+	</field>
+	<field name="v_i_note" class="java.lang.String">
+		<fieldDescription><![CDATA[Note field in record of item just checked in]]></fieldDescription>
+	</field>
+	<field name="v_i_url" class="java.lang.String">
+		<fieldDescription><![CDATA[URL (y varfld) in item record]]></fieldDescription>
+	</field>
+	<field name="precid" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron recid]]></fieldDescription>
+	</field>
+	<field name="irecid" class="java.lang.String">
+		<fieldDescription><![CDATA[Item recid]]></fieldDescription>
+	</field>
+	<field name="f_p_pcode1" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode1 in patron record]]></fieldDescription>
+	</field>
+	<field name="f_p_pcode2" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode2 in patron record]]></fieldDescription>
+	</field>
+	<field name="f_p_pcode3" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode3 in patron record]]></fieldDescription>
+	</field>
+	<field name="v_p_name" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's name]]></fieldDescription>
+	</field>
+	<field name="v_p_alias" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's alias]]></fieldDescription>
+	</field>
+	<field name="patron_last_name" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's last name]]></fieldDescription>
+	</field>
+	<field name="patron_first_name" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's first name]]></fieldDescription>
+	</field>
+	<field name="address_line_1" class="java.lang.String">
+		<fieldDescription><![CDATA[Line 1 of patron's address]]></fieldDescription>
+	</field>
+	<field name="address_line_2" class="java.lang.String">
+		<fieldDescription><![CDATA[Line 2 of patron's address]]></fieldDescription>
+	</field>
+	<field name="address_line_3" class="java.lang.String">
+		<fieldDescription><![CDATA[Line 3 of patron's address]]></fieldDescription>
+	</field>
+	<field name="v_p_email" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's e-mail address]]></fieldDescription>
+	</field>
+	<field name="v_p_telephone" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's phone number]]></fieldDescription>
+	</field>
+	<field name="v_p_telephone2" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's other phone number]]></fieldDescription>
+	</field>
+	<field name="f_p_ptype" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's ptype in long format]]></fieldDescription>
+	</field>
+	<field name="f_p_location" class="java.lang.String">
+		<fieldDescription><![CDATA[Patron's location in long format]]></fieldDescription>
+	</field>
+	<field name="hold_note" class="java.lang.String">
+		<fieldDescription><![CDATA[Hold note]]></fieldDescription>
+	</field>
+	<field name="pull_date" class="java.lang.String">
+		<fieldDescription><![CDATA[Pull date]]></fieldDescription>
+	</field>
+	<field name="hold_pickup_loc" class="java.lang.String"/>
+	<field name="checkin_date_year" class="java.lang.String"/>
+	<field name="checkin_date_month" class="java.lang.String"/>
+	<field name="checkin_date_day" class="java.lang.String"/>
+	<field name="checkin_date_hours24" class="java.lang.String"/>
+	<field name="checkin_date_hours12" class="java.lang.String"/>
+	<field name="checkin_date_minutes" class="java.lang.String"/>
+	<field name="checkin_date_seconds" class="java.lang.String"/>
+	<field name="checkin_date_ampm" class="java.lang.String"/>
+	<field name="pull_date_mdt" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="5" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="339" splitType="Stretch">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement key="textField-1" x="8" y="6" width="210" height="25" uuid="2f597049-23e0-4f31-adbb-9f0432edd648"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{v_p_alias} != null ? $F{v_p_alias}: $F{v_p_name})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-3" positionType="Float" x="8" y="177" width="193" height="19" uuid="bfd113f9-e35e-48a3-b34e-382b8b4cb40e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{v_i_barcode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-4" positionType="Float" x="8" y="150" width="193" height="27" uuid="998b8a42-33d5-4db1-ad5f-1c9faf731cf6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{v_b_title}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-8" positionType="Float" x="8" y="31" width="210" height="25" isRemoveLineWhenBlank="true" uuid="dd433acd-91cd-4591-a6e7-4914ee8d617e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pull_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="DoNotRemoveThis" positionType="Float" x="8" y="324" width="60" height="10" isRemoveLineWhenBlank="true" uuid="aca09d64-cc71-434e-bd15-62f08b763ecd"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="DoNotRemoveThisEither" positionType="Float" x="68" y="324" width="150" height="10" isRemoveLineWhenBlank="true" uuid="b1fe0b9d-6c7b-4ad2-8839-671672fc30bb"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["."]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-10" positionType="Float" x="8" y="74" width="210" height="18" isRemoveLineWhenBlank="true" uuid="d4a8e4f9-1f9e-40b8-a410-01ec2e8639bb"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{v_p_email} != null ? "EMAIL" : " ")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField" positionType="Float" x="8" y="240" width="210" height="20" isRemoveLineWhenBlank="true" uuid="26d01498-c599-4ea9-9896-bc9891c87ca9"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{v_p_email} != null ? " " : $F{v_p_telephone}.substring(0))]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-11" positionType="Float" x="8" y="212" width="210" height="18" uuid="d0c36e71-bc8b-4776-9301-ca4b84bdc924"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hold_pickup_loc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-12" positionType="Float" x="8" y="114" width="210" height="19" uuid="0ed6848e-893b-4fa5-a90b-e96106f3ffe8"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{precid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="textField-11" positionType="Float" x="8" y="270" width="210" height="49" uuid="3a50ebf9-dda3-4c6b-bc98-9c2cf9b0f1f1"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Your privacy is important to us. 
+Please speak with staff for ways to make your account more secure.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

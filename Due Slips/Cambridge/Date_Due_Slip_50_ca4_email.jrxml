@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-10-24T13:36:08 -->
+<!-- 2022-10-28T10:24:22 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Statement_of_Checkedout_Items" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d58f5d3-4949-4022-86ed-b85b6fa72a13">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -343,7 +343,7 @@
 			</staticText>
 			<staticText>
 				<reportElement key="staticText-43" positionType="Float" x="467" y="9" width="101" height="20" uuid="5a5e4f09-a3ab-4726-a7b8-adfee3e8069f"/>
-				<box>
+				<box leftPadding="10">
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -369,7 +369,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement key="textField-48" x="467" y="29" width="101" height="21" uuid="a5ac3e87-882c-4608-92ce-81c3f4251f8e"/>
-				<box>
+				<box leftPadding="10">
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
