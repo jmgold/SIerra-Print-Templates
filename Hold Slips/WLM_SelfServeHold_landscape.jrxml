@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2023-08-18T10:33:39 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="8591fc2f-9697-4bef-bf6c-26449bce6628">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
-	<import value="net.sf.jasperreports.engine.*"/>
 	<field name="v_p_barcode" class="java.lang.String">
 		<fieldDescription><![CDATA[Patron barcode]]></fieldDescription>
 	</field>
@@ -137,7 +138,7 @@
 				<textFieldExpression><![CDATA[($F{v_p_alias} != null ? $F{v_p_alias}: $F{patron_last_name})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-3" positionType="Float" x="54" y="0" width="19" height="130" uuid="2515e611-adf5-48b2-8aa8-5df79c42679e">
+				<reportElement key="textField-3" positionType="Float" x="61" y="0" width="19" height="130" uuid="2515e611-adf5-48b2-8aa8-5df79c42679e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -255,6 +256,22 @@
 				</textElement>
 				<text><![CDATA[Your privacy is important to us. Please speak with staff for ways to make your account more secure.]]></text>
 			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-12" positionType="Float" x="40" y="0" width="19" height="270" uuid="17e892fe-91ac-4af4-9542-0e698d0b75c3">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement rotation="Right">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 	<columnFooter>

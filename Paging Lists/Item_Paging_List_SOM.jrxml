@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2023-08-16T14:07:33 -->
+<!-- 2023-08-17T10:43:56 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Title_Paging_List" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9036557c-30a0-473b-8a68-ce59fce5b757">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -306,7 +306,7 @@
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement>
@@ -365,6 +365,9 @@
 				<reportElement x="230" y="15" width="270" height="20" uuid="a750e783-e3df-4b45-ae02-379e0b791a89">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
 				<textElement textAlignment="Left">
 					<font fontName="Serif" size="11"/>
 					<paragraph lineSpacingSize="1.0"/>
@@ -375,6 +378,9 @@
 				<reportElement x="500" y="15" width="71" height="20" uuid="6cca2a4a-d370-4d93-8d1a-e790082ad8a3">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
 				<textElement textAlignment="Right">
 					<paragraph lineSpacingSize="1.0"/>
 				</textElement>

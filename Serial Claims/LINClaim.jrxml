@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.0.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="_serclaim2" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f6980ad9-3254-48e8-9ca2-1db7e6e1a120">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<queryString language="xPath">
+		<![CDATA[/SerialClaim/ItemDetail]]>
+	</queryString>
+	<field name="ClaimDate" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/PrintDateTime]]></fieldDescription>
+	</field>
+	<field name="ClaimDateDisplay" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/DisplayDate]]></fieldDescription>
+	</field>
+	<field name="ShipToName" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/BuyerParty/PartyName]]></fieldDescription>
+	</field>
+	<field name="ShipToAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/BuyerParty/PostalAddress]]></fieldDescription>
+	</field>
+	<field name="AccountNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/BuyerParty/AdditionalPartyID]]></fieldDescription>
+	</field>
+	<field name="SellerAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[/SerialClaim/Header/SellerParty/PostalAddress]]></fieldDescription>
+	</field>
+	<field name="LineNum" class="java.lang.String">
+		<fieldDescription><![CDATA[LineNumber]]></fieldDescription>
+	</field>
+	<field name="CheckinNum" class="java.lang.String">
+		<fieldDescription><![CDATA[ReferenceCoded/CheckinNumber]]></fieldDescription>
+	</field>
+	<field name="OrderNum" class="java.lang.String">
+		<fieldDescription><![CDATA[ReferenceCoded/BuyersOrderLineNumber]]></fieldDescription>
+	</field>
+	<field name="VendorTitleNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ReferenceCoded/VendorTitleNumber]]></fieldDescription>
+	</field>
+	<field name="ProductIDType" class="java.lang.String">
+		<fieldDescription><![CDATA[ProductID/ProductIDType]]></fieldDescription>
+	</field>
+	<field name="ISSN" class="java.lang.String">
+		<fieldDescription><![CDATA[ProductID/Identifier]]></fieldDescription>
+	</field>
+	<field name="BibNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/BibNumber]]></fieldDescription>
+	</field>
+	<field name="Title" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Title]]></fieldDescription>
+	</field>
+	<field name="Author" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Author]]></fieldDescription>
+	</field>
+	<field name="SeriesTitle" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/SeriesTitle]]></fieldDescription>
+	</field>
+	<field name="Edition" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/EditionStatement]]></fieldDescription>
+	</field>
+	<field name="CityOfPublication" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/CityOfPublication]]></fieldDescription>
+	</field>
+	<field name="Publisher" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/PublisherName]]></fieldDescription>
+	</field>
+	<field name="Scode1" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Scode1]]></fieldDescription>
+	</field>
+	<field name="Scode2" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Scode2]]></fieldDescription>
+	</field>
+	<field name="Scode3" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Scode3]]></fieldDescription>
+	</field>
+	<field name="Scode4" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Scode4]]></fieldDescription>
+	</field>
+	<field name="Identity" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/Identity]]></fieldDescription>
+	</field>
+	<field name="InternalNote" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/InternalNote]]></fieldDescription>
+	</field>
+	<field name="VendorNote" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/VendorNote]]></fieldDescription>
+	</field>
+	<field name="TitleDescription" class="java.lang.String">
+		<fieldDescription><![CDATA[ItemDescription/TitleDescription]]></fieldDescription>
+	</field>
+	<field name="IssueCopyNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[IssueDetail/IssueCopyNumber]]></fieldDescription>
+	</field>
+	<field name="IssueEnumeration" class="java.lang.String">
+		<fieldDescription><![CDATA[IssueDetail/IssueEnumeration]]></fieldDescription>
+	</field>
+	<field name="IssueChronology" class="java.lang.String">
+		<fieldDescription><![CDATA[IssueDetail/IssueChronology]]></fieldDescription>
+	</field>
+	<field name="IssueClaimNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[IssueDetail/IssueClaimNumber]]></fieldDescription>
+	</field>
+	<field name="IssueClaimNote" class="java.lang.String">
+		<fieldDescription><![CDATA[IssueDetail/IssueClaimNote]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="4" width="563" height="18" uuid="71df965a-0cf0-4eb4-8d7f-a1671457389a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ClaimDateDisplay}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-2" x="0" y="24" width="570" height="1" uuid="fe2d198f-67b5-4ff4-95c4-28e313d0599f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText" x="0" y="10" width="20" height="20" uuid="4fe5ea3d-c6f5-4660-b8ea-9fa3407f16e6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="82" y="9" width="54" height="20" uuid="2287656d-562a-4899-ad48-ca03a5ffed6e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[ISSN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="136" y="10" width="274" height="20" uuid="ee6b7183-6815-4274-8cdc-6fde74d5f1b3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="430" y="8" width="87" height="20" uuid="401bf89f-ffcb-4179-9b2f-8824318ee38b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[Issue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText" x="525" y="10" width="38" height="20" uuid="4909931c-015c-47df-abf3-8374004888aa"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[Claim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-8" x="20" y="8" width="62" height="20" uuid="1420a693-4267-4ee4-b012-21df0d88ebb3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[Record Number]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-3" x="0" y="27" width="570" height="1" uuid="41151187-924d-42ab-8879-fdc52ef8f6de"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="0" width="20" height="50" uuid="5202e5cb-ef57-4aef-b84b-ae0ace478fdd"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{LineNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="82" y="-1" width="54" height="50" uuid="5b70e501-410b-4c9e-8dff-8a6dee226b8a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{ISSN}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="136" y="0" width="294" height="50" uuid="2ab5c4bc-827a-4206-9cdb-52c1a5d89a51"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="430" y="-1" width="86" height="20" uuid="88854b62-63e2-4882-aca7-66ca9c7a2100"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{IssueEnumeration}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="525" y="0" width="38" height="50" uuid="0ec99792-1d1a-414a-93f2-4ac818266025"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{IssueClaimNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="430" y="19" width="88" height="27" uuid="f6c7df33-57f9-4cfe-9032-27cda14f5f21"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{IssueChronology}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="22" y="0" width="60" height="47" uuid="59c796c6-bb75-4923-b698-bb65ebf13986"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{CheckinNum}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="18" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="0" width="561" height="18" uuid="e570de30-0c62-43ed-ad0b-8361fd7ffc78"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

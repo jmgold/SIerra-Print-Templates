@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2020-02-13T09:09:31 -->
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.0.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Courtesy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="d4ce732f-4f5d-48a2-9d6a-8331f4108dc8">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -314,7 +313,7 @@
 				<textElement textAlignment="Left">
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{Patron_Name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{Patron_Name_C}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement key="textField-45" mode="Transparent" x="0" y="126" width="565" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="9b8ab51c-e87b-4f59-b058-852cabf8956a"/>
@@ -548,8 +547,8 @@ Items automatically renewed will display the new due date below.]]></text>
 					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Check your library account at this link"]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA["https://find.minlib.net/iii/encore/myaccount"]]></hyperlinkReferenceExpression>
-				<hyperlinkTooltipExpression><![CDATA["https://find.minlib.net/iii/encore/myaccount"]]></hyperlinkTooltipExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://catalog.minlib.net/MyAccount/Home"]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["https://catalog.minlib.net/MyAccount/Home"]]></hyperlinkTooltipExpression>
 			</textField>
 			<textField hyperlinkType="Reference" hyperlinkTarget="Blank">
 				<reportElement mode="Transparent" x="81" y="50" width="199" height="35" forecolor="#000099" backcolor="#ECF1EF" uuid="5f3f4ce5-3372-4e0a-a03e-a1d7d4f5f41f"/>

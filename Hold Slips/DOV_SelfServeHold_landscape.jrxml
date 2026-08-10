@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2019-04-12T12:50:30 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="234" pageHeight="792" columnWidth="222" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="8591fc2f-9697-4bef-bf6c-26449bce6628">
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.0.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HoldSlip" pageWidth="243" pageHeight="792" columnWidth="231" leftMargin="10" rightMargin="2" topMargin="2" bottomMargin="2" uuid="8591fc2f-9697-4bef-bf6c-26449bce6628">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
@@ -120,12 +128,13 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="430" splitType="Stretch">
+		<band height="450" splitType="Stretch">
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
-				<reportElement key="textField-1" x="160" y="0" width="25" height="300" uuid="51af9b99-022a-41da-83ff-ad1ba0f7f9c4">
+				<reportElement key="textField-1" x="169" y="0" width="25" height="300" uuid="51af9b99-022a-41da-83ff-ad1ba0f7f9c4">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -136,12 +145,13 @@
 				<textElement rotation="Right">
 					<font size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{v_p_alias} != null ? $F{v_p_alias}: $F{v_p_name})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{v_p_alias}.equals("") ? $F{v_p_name} : $F{v_p_alias})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-3" positionType="Float" x="49" y="0" width="19" height="120" uuid="2515e611-adf5-48b2-8aa8-5df79c42679e">
+				<reportElement key="textField-3" positionType="Float" x="68" y="0" width="19" height="120" uuid="2515e611-adf5-48b2-8aa8-5df79c42679e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -155,10 +165,11 @@
 				<textFieldExpression><![CDATA[$F{v_i_barcode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-4" positionType="Float" x="68" y="0" width="19" height="280" uuid="ed110f7c-080b-43fa-b3d3-268a04349df8">
+				<reportElement key="textField-4" positionType="Float" x="87" y="0" width="19" height="300" uuid="ed110f7c-080b-43fa-b3d3-268a04349df8">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -198,10 +209,11 @@
 				<textFieldExpression><![CDATA["."]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-12" positionType="Float" x="30" y="1" width="16" height="219" uuid="b11d3109-d280-4497-8c6b-3f848b5690d8">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				<reportElement key="textField-12" positionType="Float" x="47" y="0" width="19" height="219" uuid="b11d3109-d280-4497-8c6b-3f848b5690d8">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -215,9 +227,9 @@
 				<textFieldExpression><![CDATA[($F{v_p_email} != null ? "EMAIL": $F{v_p_telephone})]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement key="textField-11" positionType="Float" x="95" y="0" width="32" height="280" uuid="b68277a4-f8f5-4be3-89f4-e50be16686a0">
+				<reportElement key="textField-11" positionType="Float" x="112" y="0" width="32" height="280" uuid="b68277a4-f8f5-4be3-89f4-e50be16686a0">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -231,10 +243,11 @@
 				<text><![CDATA[ITEM MUST BE CHECKED OUT AT THE CIRCULATION DESK]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-3" positionType="Float" x="134" y="1" width="19" height="150" uuid="22352237-ac7e-4c30-a337-550b3dbdafd7">
+				<reportElement key="textField-3" positionType="Float" x="148" y="0" width="19" height="150" uuid="22352237-ac7e-4c30-a337-550b3dbdafd7">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -248,10 +261,10 @@
 				<textFieldExpression><![CDATA[$F{pull_date}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement key="textField-12" positionType="Float" x="8" y="1" width="17" height="160" uuid="e4529720-f186-4d2f-944f-f954026ed2a4">
+				<reportElement key="textField-12" positionType="Float" x="8" y="0" width="17" height="160" uuid="e4529720-f186-4d2f-944f-f954026ed2a4">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -263,6 +276,23 @@
 					<font size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hold_pickup_loc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-3" positionType="Float" x="28" y="0" width="19" height="300" uuid="b979f4ad-2795-42ef-86bb-afc4007e34bf">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement rotation="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hold_note}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
